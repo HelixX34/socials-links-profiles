@@ -1,0 +1,14 @@
+.attribution {
+    font-size: 0.8rem;
+    text-align: center;
+
+    a {
+        color: $green;
+
+        &:hover {
+            transform: scale(1.1);
+            font-weight: 700;
+            transition: 0.2s ease;
+        }
+    }
+}

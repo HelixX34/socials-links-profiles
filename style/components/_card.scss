@@ -1,0 +1,68 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  width: 324px;
+  padding: 30px;
+  background: $darkGrey;
+  border-radius: 20px;
+
+  &__picture {
+    width: 100px;
+    border-radius: 1000px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+    }
+  }
+  &__profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+    &__title {
+      font-size: 0.8em;
+    }
+
+    &__location {
+      color: $green;
+      font-size: 0.63em;
+    }
+  }
+
+  &__skills {
+    font-size: 0.8em;
+    text-align: center;
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+
+    &__link {
+      a {
+        display: block;
+        width: 254px;
+        padding: 10px 0;
+        background: $grey;
+        color: $white;
+        font-weight: 600;
+        text-align: center;
+        border-radius: 10px;
+        
+        &:hover {
+          background: $green;
+          color: $darkGrey;
+          transition: 0.15s ease;
+        }
+      }
+    }
+  }
+}
